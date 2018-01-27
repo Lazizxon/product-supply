@@ -1,0 +1,229 @@
+html,body {
+    margin: 0;
+    font-family: "Helvetica", sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+.container {
+   max-width: 960px;
+   margin: 0 auto;
+}
+
+/* Logo section */
+
+.logo {
+    background-color: black;
+}
+
+.logo img {
+    height: 1.5rem;
+    padding-right: 1rem;
+}
+
+.inside {
+    display: flex;
+    align-items: center;
+    padding: .66rem 0 .66rem 0.5rem;
+}
+
+/*main-banner section*/
+
+.main {
+    background-image: url('../images/moto.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 25rem;
+}
+
+.headline {
+    background-color: black;
+    width: 20rem;
+    position: relative;
+    top: 9rem;
+    padding: 2rem 3rem;
+}
+
+.headline h4 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.headline h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.25rem 0;
+}
+
+/*navigation section*/
+
+nav {
+    background-color: firebrick;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+}
+
+.items a {
+    color: white;
+    text-decoration: none;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+/*product-grid section*/
+.product-grid .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.gallery-item {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-grid img {
+    height: 9rem;
+    padding: 2rem;
+    border-top: 4px solid black;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+}
+
+.same {
+    background-color: black;
+    padding: .5rem 0;
+    text-align: center;
+}
+
+/*location section*/
+.location .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.address {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.address p {
+    padding: 1rem 0 1rem 2rem;
+    background-color: black;
+}
+
+.address span {
+    color: black;
+}
+
+.time {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.time p {
+    padding: 1rem 0 1rem 2rem;
+    background-color: black;
+}
+
+.time span {
+    color: black;
+}
+
+/*Footer*/
+
+footer {
+  padding: 5rem 0;
+  margin-top: 4rem;
+  background-color: black;
+  color: white;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 1024px){
+    .items a{
+      display: none;
+    }
+    .mobile-nav {
+     display: block;
+     text-align: center;
+    }
+    .gallery-item {
+    width: 47%;
+    }
+    .glasses {
+        display: none;  
+    }
+    .headline h4 {
+    font-size: 0.75rem;
+    }
+
+    .headline h1 {
+    font-size: 1.75rem;
+    }  
+}
+
+@media only screen and (max-width: 470px){
+    .headline h4 {
+    font-size: 0.77rem;
+    }
+    .headline h1 {
+    font-size: 1rem;
+    }
+    .headline {
+        padding: 1rem 2rem;
+    }
+    .main {
+    height: 15rem;
+    }
+    .headline {
+    width: 100%;
+    position: relative;
+    top: 10rem;
+    }
+    .gallery-item {
+    width: 90%;
+    flex-wrap: wrap;
+    margin: auto;
+    }
+    
+    .watch {
+    display: none;
+    }
+    
+    .glasses {
+    display: none;
+    }
+    
+    .address {
+    width: 90%;
+    margin: auto;
+    }
+    .time {
+    width: 90%;
+    margin: auto;
+    }
+    .location .container {
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    }
+    footer {
+    text-align: center;
+    }
+}
+    
+
+    
+
